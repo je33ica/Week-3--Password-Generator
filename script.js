@@ -35,7 +35,7 @@
 
     var generatedPassword = '';
     var characterOptions ='';  
-    
+
     if (upper === true){
         generatedPassword += upperCaseOptions[Math.floor(Math.random() * upperCaseOptions.length)];
         characterOptions += upperCaseOptions;
@@ -56,3 +56,7 @@
     while (generatedPassword.length < length){
       generatedPassword += characterOptions[Math.floor(Math.random() * characterOptions.length)];
     }
+    
+    var passwordText = document.querySelector("#password");
+  passwordText.textContent = generatedPassword;
+  }
