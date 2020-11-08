@@ -19,3 +19,17 @@
     generatePassword(hasLower, hasUpper, hasNumber, hasSpecial, length);
  
   });
+
+
+  function  generatePassword(lower, upper, number, special, length) {
+    if(length < 8){
+      alert('Please select a valid length');
+      return;
+    } 
+
+    var upperCaseOptions = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; 
+    var lowerCaseOptions = "abcdefghijklmnopqrstuvwxyz"; 
+    var numberOptions = "0123456789"
+    var specialOptions = "!@#£$%^&*()_+~`|}{[]\:;?><,./-="
+ 
+   
