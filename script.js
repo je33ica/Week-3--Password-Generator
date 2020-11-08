@@ -33,6 +33,8 @@
     var specialOptions = "!@#£$%^&*()_+~`|}{[]\:;?><,./-="
  
 
+    var generatedPassword = '';
+    var characterOptions ='';  
     
     if (upper === true){
         generatedPassword += upperCaseOptions[Math.floor(Math.random() * upperCaseOptions.length)];
