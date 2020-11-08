@@ -32,4 +32,25 @@
     var numberOptions = "0123456789"
     var specialOptions = "!@#£$%^&*()_+~`|}{[]\:;?><,./-="
  
-   
+
+    
+    if (upper === true){
+        generatedPassword += upperCaseOptions[Math.floor(Math.random() * upperCaseOptions.length)];
+        characterOptions += upperCaseOptions;
+      }
+       if (lower === true){
+         generatedPassword += lowerCaseOptions[Math.floor(Math.random() * lowerCaseOptions.length)];
+         characterOptions += lowerCaseOptions;
+       }
+       if (number === true){
+        generatedPassword += numberOptions[Math.floor(Math.random() * numberOptions.length)];
+        characterOptions += numberOptions;
+      }
+      if (special === true){
+        generatedPassword += specialOptions[Math.floor(Math.random() * specialOptions.length)];
+        characterOptions += specialOptions;
+      }
+    
+    while (generatedPassword.length < length){
+      generatedPassword += characterOptions[Math.floor(Math.random() * characterOptions.length)];
+    }
