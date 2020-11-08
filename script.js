@@ -7,3 +7,11 @@
   const numberEl = document.getElementById("number");
   const specialEl = document.getElementById("special");
   const generateEl = document.getElementById("generate");
+  
+//event addEventListener for checkboxes - set as booleans 
+  generate.addEventListener("click", () => {
+    var length = +lengthEl.value;
+    var hasLower = lowerEl.checked ? true : false;
+    var hasUpper = upperEl.checked ? true : false;
+    var hasNumber = numberEl.checked ? true : false;
+    var hasSpecial = specialEl.checked ? true : false;
